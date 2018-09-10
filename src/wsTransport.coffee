@@ -53,7 +53,7 @@ class wsTransport
       @wsServer.handleUpgrade request, socket, head, (ws) =>
         @wsServer.emit('connection', ws, request)
 
-    @httpServer.listen @params.port
+    @httpServer.listen @params.port, @params.hostname
 
 
 module.exports = wsTransport

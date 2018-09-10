@@ -33,7 +33,7 @@ class tcpTransport
     if @params.path?
       @tcpServer.listen @params.path
     else
-      @tcpServer.listen @params.port
+      @tcpServer.listen @params.port, @params.hostname
 
 
 module.exports = tcpTransport
