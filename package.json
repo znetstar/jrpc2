@@ -31,7 +31,6 @@
     "middleware"
   ],
   "scripts": {
-    "postinstall": "npm run-script build",
     "test": "npm run build && mocha -R spec",
     "mocha": "mocha -R json",
     "build": "coffee -c -o lib src",
@@ -41,10 +40,10 @@
   "dependencies": {
     "async": "^1.2",
     "ws": "^6.0.0",
-    "xtend": "^4.0.0",
-    "coffee-script": "^1.9"
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
+    "coffee-script": "^1.9",
     "bluebird": "^2.9.21",
     "chai": "^3.0",
     "coveralls": "^2.11",
